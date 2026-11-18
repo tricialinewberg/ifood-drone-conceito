@@ -1,0 +1,125 @@
+.page-footer {
+  background: #35172c;
+  color: #fff;
+}
+
+.page-footer__inner {
+  display: flex;
+  width: min(100% - 96px, 1260px);
+  min-height: 100px;
+  align-items: center;
+  gap: 44px;
+  margin-inline: auto;
+}
+
+.page-footer__brand {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+.page-footer__brand img {
+  width: 80px;
+  height: auto;
+}
+
+.page-footer__brand span {
+  margin-left: -4px;
+  transform: translateY(-1px);
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.page-footer__nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(20px, 3.5vw, 52px);
+}
+
+.page-footer__nav a,
+.page-footer__back {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.page-footer__back {
+  margin-left: auto;
+}
+
+.page-footer__back span {
+  margin-left: 5px;
+}
+
+.page-footer__disclaimer {
+  width: min(100% - 96px, 1260px);
+  margin: 0 auto;
+  padding: 0 0 18px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.page-footer__copyright {
+  width: min(100% - 96px, 1260px);
+  margin: 0 auto;
+  padding: 18px 0 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+}
+
+@media (max-width: 760px) {
+  .page-footer__inner {
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 22px 16px;
+    padding: 30px 24px;
+  }
+
+  .page-footer__nav {
+    order: 3;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px 25px;
+  }
+
+  .page-footer__nav a,
+  .page-footer__back {
+    font-size: 13px;
+  }
+
+  .page-footer__copyright {
+    width: auto;
+    margin-inline: 24px;
+  }
+
+  .page-footer__disclaimer {
+    width: auto;
+    margin-inline: 24px;
+    padding-bottom: 18px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .page-footer__inner {
+    padding-inline: 18px;
+  }
+
+  .page-footer__copyright {
+    margin-inline: 18px;
+  }
+
+  .page-footer__disclaimer {
+    margin-inline: 18px;
+  }
+}
