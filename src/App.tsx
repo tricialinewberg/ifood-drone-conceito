@@ -5,6 +5,7 @@ import BenefitsSection from './sections/BenefitsSection'
 import HowItWorksSection from './sections/HowItWorksSection'
 import EditorialBenefitsSection from './sections/EditorialBenefitsSection'
 import ClosingSection from './sections/ClosingSection'
+import SiteWatermark from './SiteWatermark'
 
 function HeroArtwork() {
   return (
@@ -44,6 +45,7 @@ function App() {
           alt="Drone iFood levando uma bolsa vermelha sobre a cidade ao pôr do sol"
         />
         <HeroArtwork />
+        <SiteWatermark tone="image" />
 
         <p className="hero__concept-label">CONCEITO · NÃO É REAL</p>
 
@@ -78,12 +80,6 @@ function App() {
             <a className="hero__primary" href="#como-funciona">
               Conheça como funciona <span aria-hidden="true">→</span>
             </a>
-            <a className="hero__video" href="#video">
-              <span className="hero__play" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="m9 6 9 6-9 6z" /></svg>
-              </span>
-              Assista ao vídeo
-            </a>
           </div>
         </div>
         </section>
@@ -108,6 +104,7 @@ function App() {
             Voltar ao iFood <span aria-hidden="true">→</span>
           </a>
         </div>
+        <SiteWatermark tone="brand" />
         <p className="page-footer__disclaimer">
           Este projeto apresenta uma proposta fictícia de experiência de entrega por drones, desenvolvida de forma independente para fins de estudo e portfólio em UX/UI e Product Design. Não é um produto ou serviço real do iFood e não possui vínculo, parceria, autorização, patrocínio ou endosso da empresa. A marca e os elementos de identidade visual pertencem aos seus respectivos titulares.
         </p>

@@ -1,4 +1,5 @@
 import './ClosingSection.css'
+import SiteWatermark from '../SiteWatermark'
 
 const ifoodUrl = 'https://www.ifood.com.br/'
 
@@ -12,6 +13,7 @@ function ClosingSection() {
           <a href={ifoodUrl}>Voltar ao iFood <span aria-hidden="true">→</span></a>
         </div>
       </div>
+      <SiteWatermark tone="brand" />
     </section>
   )
 }

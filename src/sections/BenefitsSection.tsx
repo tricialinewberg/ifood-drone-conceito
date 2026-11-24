@@ -1,4 +1,5 @@
 import './BenefitsSection.css'
+import SiteWatermark from '../SiteWatermark'
 
 type Benefit = {
   title: string
@@ -63,6 +64,7 @@ function BenefitsSection() {
           ))}
         </ul>
       </div>
+      <SiteWatermark tone="light" />
     </section>
   )
 }

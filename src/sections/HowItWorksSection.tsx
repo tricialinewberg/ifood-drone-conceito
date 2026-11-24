@@ -1,4 +1,5 @@
 import './HowItWorksSection.css'
+import SiteWatermark from '../SiteWatermark'
 
 type JourneyStep = {
   number: string
@@ -55,6 +56,7 @@ function HowItWorksSection() {
           ))}
         </ol>
       </div>
+      <SiteWatermark tone="light" />
     </section>
   )
 }

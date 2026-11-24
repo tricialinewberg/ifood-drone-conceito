@@ -1,4 +1,5 @@
 import './EditorialBenefitsSection.css'
+import SiteWatermark from '../SiteWatermark'
 
 const benefitAreas = [
   { number: '01', audience: 'Para quem pede', title: 'Mais opções para receber seu pedido' },
@@ -34,6 +35,7 @@ function EditorialBenefitsSection() {
         src="/images/benefits-worker-phone.png?v=2"
         alt="Profissional em um ambiente de trabalho mostrando no celular que um pedido iFood chegou"
       />
+      <SiteWatermark tone="image" />
     </section>
   )
 }

@@ -1,4 +1,5 @@
 import './ProblemSection.css'
+import SiteWatermark from '../SiteWatermark'
 
 const illustrativeTimes = {
   ground: '25 min',
@@ -65,9 +66,8 @@ function ProblemSection() {
       <img
         className="problem-section__map"
         src="/images/problem-map.png"
-        alt="Vista aérea de uma cidade cortada por um rio e uma rodovia. Marcadores indicam um restaurante e um complexo empresarial, ligados por uma rota terrestre pontilhada."
+        alt="Vista aérea de uma cidade cortada por um rio e uma rodovia. Marcadores indicam um restaurante e um complexo empresarial, ligados por uma rota aérea pontilhada para drone."
       />
-
       <div className="problem-section__copy">
         <h2 id="problem-title">
           Perto no mapa.<br />
@@ -79,6 +79,7 @@ function ProblemSection() {
       </div>
 
       <DeliveryComparison />
+      <SiteWatermark tone="light" />
     </section>
   )
 }
